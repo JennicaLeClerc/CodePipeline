@@ -14,6 +14,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
+      - mv target/Http_Intro-1.0-SNAPSHOT.war ROOT.war
 artifacts:
   files:
-    - target/messageUtil-1.0.jar
+    - ROOT.war
